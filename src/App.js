@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import { removeFeature, buyItem} from './actions/carSalesActions'
 
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
@@ -41,5 +42,6 @@ const mapStateToProps = state => {
 };
 
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  { removeFeature, buyItem }
 )(App);

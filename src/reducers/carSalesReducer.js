@@ -1,4 +1,4 @@
-
+import { REMOVE_FEATURE, BUY_ITEM } from "../actions/carSalesActions"
 
 export const initialState = {
     additionalPrice: 0,
@@ -19,7 +19,11 @@ export const initialState = {
 
 export const carSalesReducer = (state = initialState, action) => {
     switch(action.type) {
-        default:
-            return state
+      case REMOVE_FEATURE:
+        return state
+      case BUY_ITEM:
+        return state
+      default:
+          return state
     }
 }
